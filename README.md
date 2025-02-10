@@ -19,7 +19,7 @@
 4. 本リポジトリをクローンします。
     - `git clone https://github.com/aistorytell3r/ai_storyteller.git`
 5. リポジトリ内の以下ファイルを各自の環境に合わせて変更します。
-    - `lib/service/gemini_services.dart`
+    - `lib/services/gemini_service.dart`
         - `_baseUrl`: `https://Google CloudのプロジェクトID.uc.r.appspot.com/`
             - 上記はApp EngineにWebアプリをデプロイした際に生成されるURLです。
     - `app.yaml`
@@ -34,9 +34,9 @@
 9. ビルドします。
     - `flutter build web --base-href "/static/"`
 10. リポジトリ内のファイルをビルド先に移動します。
-    - `mv main.py requirements.txt app.yaml build/static/`
+    - `mv main.py requirements.txt app.yaml build/web/`
 11. ビルド先に移動します。
-    - `cd build/static/`
+    - `cd build/web/`
 12. App Engineにデプロイします。
 
     ```ps1

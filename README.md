@@ -1,16 +1,3 @@
-# AI StoryTeller
-
-「AI StoryTeller」はAIを使って絵本の読み聞かせをしてくれるWebアプリです。読み聞かせにはVOICEVOXのずんだもんを利用しています。
-
-## 概要
-
-「AI StoryTeller」の概要や環境、使い方等は[絵本の読み聞かせアプリ「AI StoryTeller」による課題解決と実装方法](https://zenn.dev/knmknm/articles/4d08429c8e6864)に記載しています。
-
-## 環境構築手順
-
-既にFlutter、Google Cloud SDKはインストール済みとします。
-以下の手順で使用するコマンドはWindows 11上での実行を想定しています。
-
 1. Google Cloudでプロジェクトを作成します。
 2. 作成したプロジェクトで以下のAPIを有効にします。
     - Vertex AI API
@@ -33,11 +20,15 @@
     - `flutter pub get`
 9. ビルドします。
     - `flutter build web --base-href "/static/"`
-10. リポジトリ内のファイルをビルド先に移動します。
-    - `mv main.py requirements.txt app.yaml build/web/`
-11. ビルド先に移動します。
-    - `cd build/web/`
-12. App Engineにデプロイします。
+10. App Engineへのデプロイ用にフォルダを作成します。
+    - `mkdir -Force deploy/static`
+11. リポジトリ内のファイルをデプロイ用のフォルダに移動します。
+    - `mv main.py requirements.txt app.yaml deploy/`
+12. ビルドにより生成されたファイルをデプロイ用のフォルダに移動します。
+    - `mv build/web/* deploy/static/`
+13. ビルド先に移動します。
+    - `cd deploy`
+14. App Engineにデプロイします。
 
     ```ps1
     # 作成したGoogle Cloudのプロジェクトをデプロイ先に指定します。
@@ -48,8 +39,8 @@
     gcloud app deploy
     ```
 
-13. デプロイが成功したら、生成されたURLにアクセスし、Webアプリが利用できることを確認します。
-14. WebアプリにGoogleの認証画面を付けたい場合、Google Cloudにて以下を実施してください。
+15. デプロイが成功したら、生成されたURLにアクセスし、Webアプリが利用できることを確認します。
+16. WebアプリにGoogleの認証画面を付けたい場合、Google Cloudにて以下を実施してください。
     1. 作成したGoogle Cloudのプロジェクトで以下のAPIを有効にします。
         - `Identity-Aware Proxy API`
     2. OAuth同意画面を作成します。

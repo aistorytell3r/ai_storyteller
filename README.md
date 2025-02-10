@@ -24,7 +24,7 @@
             - 上記はApp EngineにWebアプリをデプロイした際に生成されるURLです。
     - `app.yaml`
         - `PROJECT_ID`: "作成したGoogle CloudのプロジェクトID"
-        - `VOICEVOX_API_KEY`: "「[WEB版VOICEVOX API（高速）](https://voicevox.su-shiki.com/su-shikiapis/)」より取得したVOiCEVOXのAPIキー"
+        - `VOICEVOX_API_KEY`: "「[WEB版VOICEVOX API（高速）](https://voicevox.su-shiki.com/su-shikiapis/)」より取得したVOICEVOXのAPIキー"
 6. リポジトリ内の以下のファイルをFlutterプロジェクトに移動します。
     - `mv assets/ lib/ pubspec.yaml "AI StoryTeller/"`
 7. 作成したFlutterプロジェクトに移動します。

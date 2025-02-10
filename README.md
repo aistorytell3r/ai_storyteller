@@ -15,7 +15,7 @@
 2. 作成したプロジェクトで以下のAPIを有効にします。
     - Vertex AI API
 3. Flutterプロジェクトを作成します。
-    - `flutter create "AI StoryTeller"`
+    - `flutter create ai_storyteller`
 4. 本リポジトリをクローンします。
     - `git clone https://github.com/aistorytell3r/ai_storyteller.git`
 5. リポジトリ内の以下ファイルを各自の環境に合わせて変更します。
@@ -26,9 +26,9 @@
         - `PROJECT_ID`: "作成したGoogle CloudのプロジェクトID"
         - `VOICEVOX_API_KEY`: "「[WEB版VOICEVOX API（高速）](https://voicevox.su-shiki.com/su-shikiapis/)」より取得したVOICEVOXのAPIキー"
 6. リポジトリ内の以下のファイルをFlutterプロジェクトに移動します。
-    - `mv assets/ lib/ pubspec.yaml "AI StoryTeller/"`
+    - `mv assets/ lib/ pubspec.yaml ai_storyteller/`
 7. 作成したFlutterプロジェクトに移動します。
-    - `cd "AI StoryTeller"`
+    - `cd ai_storyteller`
 8. 必要なパッケージをインストールします。
     - `flutter pub get`
 9. ビルドします。

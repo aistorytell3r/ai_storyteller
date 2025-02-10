@@ -1,3 +1,16 @@
+# AI StoryTeller
+
+「AI StoryTeller」はAIを使って絵本の読み聞かせをしてくれるWebアプリです。読み聞かせにはVOICEVOXのずんだもんを利用しています。
+
+## 概要
+
+「AI StoryTeller」の概要や環境、使い方等は[絵本の読み聞かせアプリ「AI StoryTeller」による課題解決と実装方法](https://zenn.dev/knmknm/articles/4d08429c8e6864)に記載しています。
+
+## 環境構築手順
+
+既にFlutter、Google Cloud SDKはインストール済みとします。
+以下の手順で使用するコマンドはWindows 11上での実行を想定しています。
+
 1. Google Cloudでプロジェクトを作成します。
 2. 作成したプロジェクトで以下のAPIを有効にします。
     - Vertex AI API

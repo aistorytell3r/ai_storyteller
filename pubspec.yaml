@@ -1,0 +1,34 @@
+name: ai_storyteller
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+  http: ^1.2.2
+  google_fonts: ^6.2.1
+  speech_to_text: ^7.0.0
+  audioplayers: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/vehicle.png
+    - assets/images/adventure.png
+    - assets/images/food.png
+    - assets/images/fantasy.png
+    - assets/images/friendship.png
+    - assets/images/animal.png
